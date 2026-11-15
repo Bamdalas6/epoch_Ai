@@ -3,6 +3,7 @@ import { BackToTop, MotionRoot, ScrollProgress } from "@/components/Motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import "./header.css";
 import "./pages.css";
 
 // Epoch AI's brand face is Messina Sans (licensed, not bundled). It is used first if installed;

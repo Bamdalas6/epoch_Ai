@@ -73,16 +73,12 @@ export function Stats({ stats }) {
 /* ---------- Trusted by ---------- */
 
 export function Trusted({ names }) {
-  const [paused, setPaused] = useState(false);
   return (
     <div className="trusted">
       <div className="wrap trusted-head">
         <p className="eyebrow" id="h-trust">Cited by leading publications and institutions</p>
-        <button type="button" className="pause" aria-pressed={paused} onClick={() => setPaused(!paused)}>
-          <span aria-hidden="true">{paused ? "▶" : "❚❚"}</span> {paused ? "Play" : "Pause"}<span className="sr-only"> scrolling list</span>
-        </button>
       </div>
-      <div className={`marquee${paused ? " paused" : ""}`}>
+      <div className="marquee">
         <ul aria-labelledby="h-trust">{names.map((n) => <li key={n}>{n}</li>)}</ul>
         <ul aria-hidden="true">{names.map((n) => <li key={n}>{n}</li>)}</ul>
       </div>
