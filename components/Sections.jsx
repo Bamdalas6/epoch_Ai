@@ -5,6 +5,7 @@ import { AnimatePresence, motion, useInView } from "motion/react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CountUp, EASE, Reveal, ScrollZoom, Tilt } from "@/components/Motion";
 import { HOME, LINKS } from "@/lib/nav";
+import { pubHref } from "@/lib/slug";
 
 export function SectionHead({ id, eyebrow, title, more, moreHref = HOME, moreSr, children }) {
   return (
@@ -154,7 +155,7 @@ export function Latest({ items }) {
               <motion.li key={it.title} layout initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, scale: 0.97 }}
                 transition={{ duration: 0.4, delay: i * 0.03, ease: EASE }}>
                 <div className="top"><time className="meta" dateTime={it.iso}>{it.date}</time><span className="tag">{it.tag}</span></div>
-                <h3><SmartLink href={LINKS.latest}>{it.title}</SmartLink></h3>
+                <h3><SmartLink href={pubHref(it.title)}>{it.title}</SmartLink></h3>
               </motion.li>
             ))}
           </AnimatePresence>
@@ -470,7 +471,7 @@ export function Newsletter() {
   }
 
   return (
-    <section className="signup" aria-labelledby="h-news">
+    <section className="signup" id="subscribe" aria-labelledby="h-news">
       <div className="wrap signup-grid">
         <Reveal>
           <p className="eyebrow">Gradient Updates</p>
@@ -484,7 +485,7 @@ export function Newsletter() {
               aria-describedby="email-hint email-status" aria-invalid={invalid || undefined} required />
             <button className="btn" type="submit" disabled={busy} aria-busy={busy}>{busy ? "Sending…" : "Subscribe"}</button>
           </div>
-          <p className="hint" id="email-hint">One email a week. Unsubscribe at any time. Prefer Substack? <SmartLink href={LINKS.subscribe}>Subscribe there</SmartLink>.</p>
+          <p className="hint" id="email-hint">One email a week. Unsubscribe at any time. <SmartLink href="/newsletter">Read past issues</SmartLink>.</p>
           <p className={`status${status.ok ? " ok" : status.text ? " err" : ""}`} id="email-status" role="status" aria-live="polite">
             {status.text && <span aria-hidden="true">{status.ok ? "✓ " : "! "}</span>}{status.text}
           </p>

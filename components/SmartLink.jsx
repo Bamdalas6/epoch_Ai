@@ -1,20 +1,23 @@
 import Link from "next/link";
-import { isExternal } from "@/lib/nav";
+import { isExternal, u } from "@/lib/nav";
+
+const EPOCH = /^https?:\/\/(www\.)?epoch\.ai/i;
 
 /**
- * Internal pages use client-side navigation; links to the live epoch.ai site
- * get a small ↗ and a screen-reader hint so nobody is surprised by the jump.
+ * Internal pages use client-side navigation. Any epoch.ai address is rewritten to the
+ * matching page on this site, so no click ever leaves for the original website.
+ * Truly external links (social profiles, donation platform) get a ↗ and a hint.
  */
 export default function SmartLink({ href, children, mark = false, ...rest }) {
-  if (isExternal(href)) {
-    const onEpoch = href.startsWith("https://epoch.ai");
+  const target = EPOCH.test(href) ? u(href.replace(EPOCH, "") || "/") : href;
+  if (isExternal(target)) {
     return (
-      <a href={href} {...rest}>
+      <a href={target} rel="noopener" {...rest}>
         {children}
         {mark && <span className="ext" aria-hidden="true">↗</span>}
-        {mark && <span className="sr-only">{onEpoch ? " (on epoch.ai)" : " (external site)"}</span>}
+        {mark && <span className="sr-only"> (external site)</span>}
       </a>
     );
   }
-  return <Link href={href} {...rest}>{children}</Link>;
+  return <Link href={target} {...rest}>{children}</Link>;
 }

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 import "./header.css";
 import "./pages.css";
+import "./library.css";
 
 // Epoch AI's brand face is Messina Sans (licensed, not bundled). It is used first if installed;
 // otherwise Hanken Grotesk, a close open-licence grotesque, keeps the same tone.

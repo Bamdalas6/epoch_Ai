@@ -76,7 +76,7 @@ export function DataHub({ data }) {
                 <motion.li key={d.title} layout initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.96 }} transition={{ duration: 0.3, ease: EASE }}>
                   <article className="ds">
                     <p className="ds-top"><span className="tag">{d.group}</span><span className="meta">Updated {d.updated}</span></p>
-                    <h3><SmartLink href="https://epoch.ai/data">{d.title}</SmartLink></h3>
+                    <h3><SmartLink href={d.href || "/data"}>{d.title}</SmartLink></h3>
                     <p>{d.text}</p>
                   </article>
                 </motion.li>
@@ -88,8 +88,8 @@ export function DataHub({ data }) {
               <button type="button" className="btn ghost" onClick={() => { setQ(""); setGroup("All"); }}>Show all datasets</button></div>
           )}
           <Reveal className="licence">
-            <p><b>Free to use.</b> All Epoch AI data is published under a Creative Commons Attribution licence. Download every dataset as ZIP files from the live data page.</p>
-            <SmartLink className="btn ghost" href="https://epoch.ai/data" mark>Download our data</SmartLink>
+            <p><b>Free to use.</b> All Epoch AI data is published under a Creative Commons Attribution licence. Need a custom extract or help using the data? Get in touch.</p>
+            <SmartLink className="btn ghost" href="/contact">Ask about data access</SmartLink>
           </Reveal>
         </div>
       </section>

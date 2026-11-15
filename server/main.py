@@ -13,6 +13,7 @@ from pydantic import BaseModel
 
 CONTENT_FILE = Path(__file__).resolve().parent.parent / "content" / "site.json"
 PAGES_FILE = CONTENT_FILE.with_name("pages.json")
+LIBRARY_FILE = CONTENT_FILE.with_name("library.json")
 EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]{2,}$")
 
 app = FastAPI(title="Epoch AI concept API", version="1.0.0")
@@ -49,6 +50,11 @@ def health() -> dict:
 @app.get("/api/content")
 def content() -> dict:
     return load_content()
+
+
+@app.get("/api/library")
+def library() -> dict:
+    return json.loads(LIBRARY_FILE.read_text(encoding="utf-8"))
 
 
 @app.get("/api/pages/{key}")

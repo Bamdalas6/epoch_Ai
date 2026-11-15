@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="wrap">
         <div className="f-top">
           <p className="f-tag">Investigating the trajectory of AI for the benefit of society</p>
-          <a className="btn" href={LINKS.subscribe}>Get the latest in your inbox<span className="arrow" aria-hidden="true">→</span></a>
+          <SmartLink className="btn" href={LINKS.subscribe}>Get the latest in your inbox<span className="arrow" aria-hidden="true">→</span></SmartLink>
         </div>
         <div className="f-grid">
           <div className="f-brand">
@@ -23,8 +23,8 @@ export default function Footer() {
         </div>
         <div className="legal">
           <span>© 2026 Epoch AI</span>
-          {LEGAL.map((l) => <a key={l.label} href={l.href}>{l.label}</a>)}
-          <ul className="social" aria-label="Social media">{SOCIAL.map((s) => <li key={s}><a href="https://epoch.ai/">{s}</a></li>)}</ul>
+          {LEGAL.map((l) => <SmartLink key={l.label} href={l.href}>{l.label}</SmartLink>)}
+          <ul className="social" aria-label="Epoch AI on social media">{SOCIAL.map(([label, url]) => <li key={label}><a href={url} rel="noopener">{label}<span className="sr-only"> (external site)</span></a></li>)}</ul>
         </div>
       </div>
     </footer>

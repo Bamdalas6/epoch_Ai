@@ -3,6 +3,7 @@ import { Reveal } from "@/components/Motion";
 import { Newsletter } from "@/components/Sections";
 import SmartLink from "@/components/SmartLink";
 import { getPage } from "@/lib/content";
+import { pubHref } from "@/lib/slug";
 
 export const metadata = { title: "Data Insights" };
 
@@ -19,7 +20,7 @@ export default async function InsightsPage() {
               <Reveal as="li" zoom delay={i * 0.08} key={f.title} className="ins-card" style={{ "--c": f.color }}>
                 <span className="ins-bars" aria-hidden="true">{[38, 52, 46, 70, 88].map((h, k) => <i key={k} style={{ height: `${h - i * 6}%`, transitionDelay: `${k * 60}ms` }} />)}</span>
                 <p className="meta"><span className="tag">Data Insight</span> <time dateTime={f.iso}>{f.date}</time></p>
-                <h3><SmartLink href="https://epoch.ai/data-insights">{f.title}</SmartLink></h3>
+                <h3><SmartLink href={pubHref(f.title)}>{f.title}</SmartLink></h3>
               </Reveal>
             ))}
           </ul>
@@ -28,7 +29,7 @@ export default async function InsightsPage() {
       <section aria-labelledby="ins-all">
         <div className="wrap">
           <BlockHead id="ins-all" eyebrow="Archive" title="All data insights" />
-          <FilterList items={p.items} facet="none" linkHref="https://epoch.ai/data-insights" />
+          <FilterList items={p.items.map((i) => ({ ...i, href: pubHref(i.title) }))} facet="none" />
         </div>
       </section>
       <Newsletter />

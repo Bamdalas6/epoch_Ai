@@ -2,10 +2,11 @@ import { PageHero, BlockHead, Accordion } from "@/components/Page";
 import { Reveal } from "@/components/Motion";
 import SmartLink from "@/components/SmartLink";
 import { getPage } from "@/lib/content";
+import { slugify } from "@/lib/slug";
 
 export const metadata = { title: "Careers" };
 
-const APPLY = "https://epoch.ai/about/careers";
+const apply = (title) => `/about/careers/apply/${slugify(title)}`;
 
 export default async function CareersPage() {
   const c = await getPage("careers");
@@ -25,7 +26,7 @@ export default async function CareersPage() {
                 <h3 className="tg-title">{team} <span>{roles.length}</span></h3>
                 <Accordion headingLevel={4} items={roles.map((r) => ({
                   q: r.title,
-                  a: (<><p>{r.text}</p><SmartLink className="btn" href={APPLY} mark>Apply: {r.title}</SmartLink></>),
+                  a: (<><p>{r.text}</p><SmartLink className="btn" href={apply(r.title)}>Apply: {r.title}<span className="arrow" aria-hidden="true">→</span></SmartLink></>),
                 }))} />
               </div>
             );
@@ -40,7 +41,7 @@ export default async function CareersPage() {
               <Reveal as="li" className="duo-card" delay={i * 0.1} key={r.title}>
                 <h3>{r.title}</h3>
                 <p>{r.text}</p>
-                <SmartLink className="btn ghost" href={APPLY} mark>Submit interest</SmartLink>
+                <SmartLink className="btn ghost" href={apply(r.title)}>Submit interest</SmartLink>
               </Reveal>
             ))}
           </ul>

@@ -69,7 +69,7 @@ export function BlockHead({ id, eyebrow, title, children }) {
 
 /* ---------- Search + filter list (Latest, Data Insights) ---------- */
 
-export function FilterList({ items, facet = "type", facetLabel = "Type", topicLabel = "Topic", linkHref = "https://epoch.ai/latest" }) {
+export function FilterList({ items, facet = "type", facetLabel = "Type", topicLabel = "Topic", linkHref = "/latest" }) {
   const uid = useId();
   const [q, setQ] = useState("");
   const [kind, setKind] = useState("All");
@@ -147,7 +147,7 @@ export function FilterList({ items, facet = "type", facetLabel = "Type", topicLa
                   <time dateTime={it.iso}>{it.date}</time>
                   {it.topic && <span className="pub-topic">{it.topic}</span>}
                 </div>
-                <h3><SmartLink href={linkHref}>{it.title}</SmartLink></h3>
+                <h3><SmartLink href={it.href || linkHref}>{it.title}</SmartLink></h3>
                 {it.summary && <p>{it.summary}</p>}
                 {it.authors && <p className="by">By {it.authors}</p>}
                 <span className="pub-go" aria-hidden="true">→</span>
@@ -352,5 +352,61 @@ export function Timeline({ items }) {
         </Reveal>
       ))}
     </ol>
+  );
+}
+
+/* ---------- Key facts ---------- */
+
+export function Facts({ facts, color = "#00a5a6", label = "Key numbers" }) {
+  return (
+    <ul className="facts" aria-label={label} style={{ "--c": color }}>
+      {facts.map(([value, text], i) => (
+        <Reveal as="li" zoom delay={i * 0.07} key={text} className="fact">
+          <b>{value}</b>
+          <span>{text}</span>
+        </Reveal>
+      ))}
+    </ul>
+  );
+}
+
+/* ---------- Publication cards ---------- */
+
+export function PubCards({ items }) {
+  return (
+    <ol className="pubs">
+      {items.map((it, i) => (
+        <Reveal as="li" key={it.href} delay={Math.min(i, 4) * 0.05} y={18}>
+          <article className="pub">
+            <div className="pub-meta">
+              {it.type && <span className="tag">{it.type}</span>}
+              <time dateTime={it.iso}>{it.date}</time>
+              {it.topic && <span className="pub-topic">{it.topic}</span>}
+            </div>
+            <h3><SmartLink href={it.href}>{it.title}</SmartLink></h3>
+            {it.summary && <p>{it.summary}</p>}
+            {it.authors && <p className="by">By {it.authors}</p>}
+            <span className="pub-go" aria-hidden="true">→</span>
+          </article>
+        </Reveal>
+      ))}
+    </ol>
+  );
+}
+
+/* ---------- Citation with copy button ---------- */
+
+export function CiteBox({ text }) {
+  const [copied, setCopied] = useState(false);
+  const copy = async () => {
+    try { await navigator.clipboard.writeText(text); setCopied(true); setTimeout(() => setCopied(false), 2500); } catch {}
+  };
+  return (
+    <div className="cite">
+      <p className="eyebrow" id="cite-h">Cite this work</p>
+      <p className="cite-text" aria-labelledby="cite-h">{text}</p>
+      <button type="button" className="btn ghost btn-sm" onClick={copy}>{copied ? "Copied ✓" : "Copy citation"}</button>
+      <span className="sr-only" role="status" aria-live="polite">{copied ? "Citation copied to clipboard" : ""}</span>
+    </div>
   );
 }

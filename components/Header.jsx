@@ -168,7 +168,7 @@ export default function Header() {
                   </li>
                 );
               })}
-              <li className="drawer-cta"><a className="btn" href={LINKS.subscribe}>Subscribe to updates</a></li>
+              <li className="drawer-cta"><Link className="btn" href={LINKS.subscribe} onClick={() => setMenuOpen(false)}>Subscribe to updates</Link></li>
             </ul>
           </nav>
 
@@ -178,7 +178,7 @@ export default function Header() {
               <span className="label">Search</span>
               <kbd aria-hidden="true">Ctrl K</kbd>
             </button>
-            <a className="btn btn-sm head-cta" href={LINKS.subscribe}>Subscribe</a>
+            <Link className="btn btn-sm head-cta" href={LINKS.subscribe}>Subscribe</Link>
           </div>
         </div>
       </motion.header>

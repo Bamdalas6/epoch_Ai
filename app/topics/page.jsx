@@ -22,7 +22,7 @@ export default async function TopicsPage() {
                   <p>{g.text}</p>
                   <ul>
                     {g.items.map(([label, path]) => (
-                      <li key={label}><SmartLink href={`https://epoch.ai${path}`}>{label}<span className="ext" aria-hidden="true">↗</span><span className="sr-only"> (on epoch.ai)</span></SmartLink></li>
+                      <li key={label}><SmartLink href={path}>{label}<span className="arrow" aria-hidden="true">→</span></SmartLink></li>
                     ))}
                   </ul>
                 </Tilt>

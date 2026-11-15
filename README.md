@@ -11,48 +11,23 @@ Not affiliated with or endorsed by Epoch AI. Content and figures come from epoch
 
 ## Pages
 
+Every link stays on this site: 92 pages, checked by crawling every link.
+
 | Route | What's on it |
 |---|---|
-| `/` | Hero, key trends with confidence-interval bars, featured work, filterable latest work, scroll-driven chart story, data cards, expert quote carousel |
-| `/latest` | All publications with search, type pills, topic and sort filters |
-| `/trends` | Trends dashboard; switch growth between ×/year, doubling time and orders of magnitude; sticky category nav |
-| `/data` | Featured datasets plus a searchable, filterable list of all datasets |
-| `/data-insights` | Featured insights and a searchable archive |
-| `/benchmarks` | Hub at a glance, latest activity timeline, FAQ |
-| `/topics` | The four topic groups |
-| `/about`, `/about/team`, `/about/careers`, `/about/donate`, `/about/consultations`, `/contact` | Company pages; team directory with search; role accordions; enquiry and contact forms with an error summary |
+| `/` | Hero, key trends, featured work, filterable latest work, scroll-driven chart story, data cards, expert quotes |
+| `/latest`, `/data-insights`, `/newsletter`, `/podcast` | Publication lists with search and filters |
+| `/publications/[slug]` | One page per report, data insight, newsletter issue and podcast episode (35) |
+| `/trends` | Trends dashboard with ×/year, doubling time and OOM views |
+| `/topics`, `/topics/[slug]` | Topic hub and 15 topic pages |
+| `/data`, `/data/[slug]` | Data hub and 16 dataset pages |
+| `/benchmarks`, `/benchmarks/[slug]` | Benchmark hub and 5 benchmark pages (ECI, FrontierMath, Open Problems, MirrorCode, Automation Reports) |
+| `/about`, `/about/team`, `/about/transparency`, `/about/press`, `/about/consultations`, `/about/careers`, `/about/careers/apply/[slug]`, `/about/donate`, `/contact` | Company pages and forms |
+| `/legal/privacy`, `/legal/cookies` | This concept's own privacy and cookie notes |
 
-Links to pages not rebuilt here (individual topic pages, data explorers, FrontierMath, ECI) go to epoch.ai and are marked ↗.
+Content lives in `content/site.json` (homepage), `content/pages.json` (main pages) and `content/library.json` (topics, datasets, benchmarks, newsletter, podcast, transparency, press).
+Old epoch.ai-style addresses such as `/eci` or `/gradient-updates` redirect to the matching page. The only outbound links are Epoch AI's social profiles and the every.org donation page.
 Press **Ctrl K** (or **/**) anywhere to search pages.
-
-## Run it
-
-**Windows shortcut:** double-click `START-WEBSITE.bat`. It starts the API and the website and opens http://localhost:3000. Needs Node.js (and Python for the newsletter form).
-
-Or start each part by hand:
-
-**1. API** (Python 3.10+)
-
-    cd server
-    pip install -r requirements.txt
-    uvicorn main:app --reload --port 8000
-
-**2. Website** (Node 20+), from the project folder
-
-    npm install
-    npm run dev          # http://localhost:3000
-
-The site reads from the API and falls back to `content/site.json` if the API is off.
-Set `API_URL` if the API is not on `http://127.0.0.1:8000`.
-
-**3. Mobile app** (Flutter 3.19+)
-
-    cd mobile
-    flutter create .     # generates the android/ios/web folders once
-    flutter pub get
-    flutter run -d chrome --dart-define=API_URL=http://127.0.0.1:8000
-
-On an Android emulator use `--dart-define=API_URL=http://10.0.2.2:8000`.
 
 ## Deploy to Vercel
 

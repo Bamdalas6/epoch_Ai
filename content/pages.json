@@ -1,232 +1,1171 @@
 {
-  "latest": {
-    "title": "Our latest work",
-    "lede": "Explore Epoch AI’s most recent work, including research papers, data insights, our newsletter, and podcast.",
-    "items": [
-      {"type": "Report", "date": "Nov. 13, 2026", "iso": "2026-11-13", "topic": "Organizational updates", "title": "Incident report: AI agents attempted exploits on our website during a third-party alignment evaluation", "summary": "Three October 2026 events involving Trajectory Labs, PBC, in which agents probed our site and impersonated staff. No private data was accessed.", "authors": "The Epoch AI Team"},
-      {"type": "Report", "date": "Nov. 9, 2026", "iso": "2026-11-09", "topic": "Chips", "title": "Inference Performance Index: changing the way we measure inference capacity", "summary": "Comparing AI hardware for inference beyond FLOP/s with memory and inter-chip communication.", "authors": "Jason Li"},
-      {"type": "Report", "date": "Nov. 6, 2026", "iso": "2026-11-06", "topic": "Geopolitics", "title": "What Huawei’s Horinger data center reveals about China’s compute gap", "summary": "Huawei’s AI data center in Horinger, Inner Mongolia, uses Ascend chips and has an estimated AI computing capacity that is just 7% that of the world’s largest AI data center, SpaceX’s Colossus 2 in Tennessee.", "authors": "Ben Cottier"},
-      {"type": "Data Insight", "date": "Nov. 4, 2026", "iso": "2026-11-04", "topic": "Chips", "title": "Broadcom TPU compute shipments doubled from Q2 to Q3 2026, reaching 2 million H100-equivalents", "summary": "Broadcom’s shipments of TPU by unit volume increased by about 65% quarter over quarter to roughly 800,000 chips, while compute output doubled, driven by a shift to more powerful chips.", "authors": "Venkat Somala and Josh You"},
-      {"type": "Report", "date": "Nov. 4, 2026", "iso": "2026-11-04", "topic": "Capabilities", "title": "Updating the Epoch Capabilities Index methodology to use a Bayesian model", "summary": "A Bayesian model gives the ECI better-justified uncertainty estimates and lets us compare models directly.", "authors": "Emilia Álvarez and Alexander Barry"},
-      {"type": "Data Insight", "date": "Oct. 30, 2026", "iso": "2026-10-30", "topic": "Adoption and use", "title": "LLM use is acknowledged almost as often as specialized AI tools in biology preprints", "summary": "17% of biology preprints acknowledge LLM use, nearly matching specialized tools like AlphaFold.", "authors": "Tara Abrishami"},
-      {"type": "Report", "date": "Oct. 29, 2026", "iso": "2026-10-29", "topic": "Cybersecurity", "title": "AI can turn security fixes into working exploits before users receive an update", "summary": "GLM 5.3 turned published-but-unshipped Firefox security fixes into working one-click exploits for six releases, at roughly $1,000 each.", "authors": "Aiden Ament, Yafah Edelman, Alexander Barry, Timothée Chauvin, Lee Bousfield, and Jaeho Lee"},
-      {"type": "Data Insight", "date": "Oct. 29, 2026", "iso": "2026-10-29", "topic": "Chips", "title": "New global AI computing capacity is doubling every 9 months", "summary": "The computing power of AI chips sold each quarter has grown about 2.5× per year since 2024, down from a surge in 2023.", "authors": "Isabel Juniewicz and Josh You"},
-      {"type": "Update", "date": "Oct. 27, 2026", "iso": "2026-10-27", "topic": "Geopolitics", "title": "Introducing the AI Chip Imports explorer", "summary": "Our explorer uses customs records to estimate national shares. Since 2022, 72% of AI compute has ended up in the US and about 10% in China, including chips China makes itself.", "authors": "Lucio Melito and Isabel Juniewicz"},
-      {"type": "Data Insight", "date": "Oct. 16, 2026", "iso": "2026-10-16", "topic": "Open models", "title": "Open-weight models trail closed models in cyber capabilities by 6–7 months", "summary": "Z.ai’s GLM-5.3 is the top open-weight model on Epoch’s Cyber ECI, scoring where the closed-weight frontier stood 6–7 months earlier.", "authors": "Jaeho Lee and Alexander Barry"}
-    ]
-  },
-
-  "insights": {
-    "title": "Data Insights",
-    "lede": "Complex AI trends broken down into focused, digestible snapshots: training compute, hardware advances, AI training costs and more.",
-    "featured": [
-      {"date": "Jan. 9, 2026", "iso": "2026-01-09", "title": "Global AI computing capacity is doubling every 7 months", "color": "#00a5a6"},
-      {"date": "Jul. 2, 2026", "iso": "2026-07-02", "title": "Disclosure of serious cyber vulnerabilities spiked around the release of Claude Mythos Preview", "color": "#6a3ecb"},
-      {"date": "Mar. 12, 2025", "iso": "2025-03-12", "title": "LLM inference prices have fallen rapidly but unequally across tasks", "color": "#009af1"}
-    ],
-    "items": [
-      {"date": "Nov. 4, 2026", "iso": "2026-11-04", "topic": "Chips", "title": "Broadcom TPU compute shipments doubled from Q2 to Q3 2026, reaching 2 million H100-equivalents", "summary": "TPU unit volume rose about 65% quarter over quarter to roughly 800,000 chips, while compute output doubled, driven by a shift to more powerful chips.", "authors": "Venkat Somala and Josh You"},
-      {"date": "Oct. 30, 2026", "iso": "2026-10-30", "topic": "Adoption and use", "title": "LLM use is acknowledged almost as often as specialized AI tools in biology preprints", "summary": "17% of biology preprints acknowledge LLM use, nearly matching specialized tools like AlphaFold.", "authors": "Tara Abrishami"},
-      {"date": "Oct. 29, 2026", "iso": "2026-10-29", "topic": "Chips", "title": "New global AI computing capacity is doubling every 9 months", "summary": "The computing power of AI chips sold each quarter has grown about 2.5× per year since 2024, down from a surge in 2023.", "authors": "Isabel Juniewicz and Josh You"},
-      {"date": "Oct. 16, 2026", "iso": "2026-10-16", "topic": "Cybersecurity", "title": "Open-weight models trail closed models in cyber capabilities by 6–7 months", "summary": "Z.ai’s GLM-5.3 is the top open-weight model on Epoch’s Cyber ECI, scoring where the closed-weight frontier stood 6–7 months earlier.", "authors": "Jaeho Lee and Alexander Barry"},
-      {"date": "Oct. 7, 2026", "iso": "2026-10-07", "topic": "Cybersecurity", "title": "US adults are no more likely to face cyber incidents than when Claude Fable 5 launched", "summary": "June and September polls from Epoch AI/Ipsos show no detectable increase in the share of US adults experiencing cyber incidents.", "authors": "Caroline Falkman Olsson and Yafah Edelman"},
-      {"date": "Oct. 5, 2026", "iso": "2026-10-05", "topic": "Leading companies", "title": "Coding-agent spending by OpenAI researchers is doubling roughly every month", "summary": "OpenAI researchers’ coding-agent usage, valued at API prices, has recently been doubling roughly every month, according to breakpoint fits.", "authors": "Yafah Edelman and Luke Emberson"},
-      {"date": "Sep. 18, 2026", "iso": "2026-09-18", "topic": "Math", "title": "In August, 25% of math preprints acknowledged AI use, up from 4% in April", "summary": "Acknowledgments of AI use in arXiv math preprints rose from 4% in April 2026 to 25% in August, with 6% crediting AI with a substantial research contribution.", "authors": "Tara Abrishami"},
-      {"date": "Sep. 17, 2026", "iso": "2026-09-17", "topic": "Geopolitics", "title": "Trade data is consistent with more than $3 billion of chips smuggled into China via Malaysia", "summary": "China recorded $3.8B of server imports from Malaysia in 2024–25; Malaysia recorded only $0.6B of exports.", "authors": "Isabel Juniewicz"},
-      {"date": "Sep. 16, 2026", "iso": "2026-09-16", "topic": "Capabilities", "title": "GPT-6 Astra leads on math benchmarks, but not on software engineering", "summary": "GPT-6 Astra tops the ECI with a score of 166, and its Math-ECI of 170 sets a new record, but its SWE-ECI of 164 still lags Fable 5.1’s 167.", "authors": "Alexander Barry and Jaeho Lee"}
-    ]
-  },
-
-  "trends": {
-    "updated": "Feb. 5, 2026",
-    "title": "Trends in AI",
-    "lede": "Frontier AI systems are advancing rapidly from increases in compute, hardware performance, software efficiency, and investment. This dashboard explores those dynamics.",
-    "intro": [
-      "What drives AI progress? The story is dominated by scale. Training AI systems with more compute, power and data has consistently led to better performance. Since 2020, the compute used to train frontier language models has increased 5× per year.",
-      "This scale-up comes from three sources: deploying more chips in parallel, training for longer, and leveraging increasingly powerful and cost-effective AI processors. Training costs are climbing by 3.5× annually, and today’s largest AI data centers are approaching a gigawatt of power capacity, enough to power roughly a million US homes."
-    ],
-    "groups": [
-      {"id": "model-performance", "name": "Model performance", "color": "#00a5a6",
-       "headline": "The ECI frontier has advanced by 14 points per year since the introduction of reasoning models.",
-       "text": "Following the first reasoning models (OpenAI’s o1-mini and o1-preview) in September 2024, the Epoch Capabilities Index frontier has advanced linearly by 14 points per year, compared with 6 points per year for non-reasoning models.",
-       "stats": [
-         {"label": "Model capabilities", "kind": "linear", "display": "+14", "unit": "ECI / year", "text": "The ECI frontier has advanced by 14 points per year since reasoning models arrived.", "ci": "+12 to +17 ECI"},
-         {"label": "SOTA vs. consumer hardware", "kind": "plain", "display": "8", "unit": "months", "text": "Frontier AI performance becomes accessible on consumer hardware within a year."},
-         {"label": "LLM context windows", "kind": "growth", "factor": 30, "range": [10, 50], "text": "LLM context windows have grown by 30× per year since 2023."}
-       ],
-       "data": {"title": "Benchmarking", "text": "Track and compare frontier model performance across 40+ evaluations", "href": "/benchmarks"}},
-      {"id": "ai-companies", "name": "AI companies", "color": "#6a3ecb",
-       "headline": "The aggregate computing power of AI chips sold each quarter is growing at 2.5× per year.",
-       "text": "Quarterly additions of computing capacity have grown about 2.5× per year since 2024, down from roughly 6× in 2023, which saw a surge following ChatGPT, GPT-4 and Nvidia’s H100.",
-       "stats": [
-         {"label": "New compute growth", "kind": "growth", "factor": 2.5, "range": [2.3, 2.7], "text": "Growth in the aggregate computing power of AI chips sold each quarter."},
-         {"label": "OpenAI revenue growth", "kind": "growth", "factor": 3.2, "range": [3.0, 3.4], "text": "OpenAI’s annualized revenue has grown by 3.2× per year since 2024."},
-         {"label": "Frontier inference compute", "kind": "plain", "display": "30", "unit": "%", "text": "Only 30% of OpenAI’s compute spending in 2024 was used on inference."},
-         {"label": "Frontier AI investment", "kind": "plain", "display": "$370", "unit": "billion", "text": "Frontier AI labs have raised more than $370 billion."}
-       ],
-       "data": {"title": "Companies", "text": "Data on key organizations and labs driving AI development worldwide.", "href": "https://epoch.ai/data/ai-companies"}},
-      {"id": "training-runs", "name": "Training runs", "color": "#009af1",
-       "headline": "Training compute for frontier language models has been growing at 5× per year since 2020.",
-       "text": "The amount of compute used to train frontier language models has grown exponentially. Since 2020, the trend among top-5 models has grown by a factor of about 10,000.",
-       "stats": [
-         {"label": "Training compute", "kind": "growth", "factor": 5, "range": [4, 6], "text": "Training compute for frontier language models since 2020."},
-         {"label": "Training cost", "kind": "growth", "factor": 3.5, "range": [2.8, 4.4], "text": "The cost to train frontier language models has increased by 3.5× per year since 2020."}
-       ],
-       "data": {"title": "Models", "text": "Database of AI systems tracked by training compute, organization, and release date.", "href": "https://epoch.ai/data/ai-models"}},
-      {"id": "data-centers", "name": "Data centers", "color": "#ea8d00",
-       "headline": "The largest known AI data center has a computing capacity equivalent to 1.1 million NVIDIA H100 chips.",
-       "text": "SpaceXAI’s Colossus 2 in Memphis, Tennessee has an estimated capacity of 1.1 million H100-equivalents. Meta Hyperion is expected to have over 3× more, at 3.7M H100-equivalents by January 2028.",
-       "stats": [
-         {"label": "Largest AI data center", "kind": "plain", "display": "1,100,000", "unit": "H100e", "text": "Computing capacity of the largest known AI data center."},
-         {"label": "Build time", "kind": "plain", "display": "2.1", "unit": "years", "text": "Gigawatt-scale data centers can be built in about 2 years.", "ci": "1 to 3.6 years"},
-         {"label": "Cost per gigawatt", "kind": "plain", "display": "$38", "unit": "billion", "text": "Typical up-front capital expenditure for an AI data center with 1 GW of IT power."},
-         {"label": "Hyperscaler compute share", "kind": "plain", "display": "71", "unit": "%", "text": "Five hyperscalers own over two-thirds of global AI compute."}
-       ],
-       "data": {"title": "AI data centers", "text": "AI data centers tracked via satellite imagery and permit data.", "href": "https://epoch.ai/data/ai-data-centers"}},
-      {"id": "hardware", "name": "Hardware", "color": "#e62c11",
-       "headline": "AI chip performance per dollar has grown by 49% per year since 2023.",
-       "text": "Since 2023, the average dollar spent on AI chips has bought about 49% more performance each year, in constant 2025 dollars. Gains come in spurts as spending shifts to each new chip generation.",
-       "stats": [
-         {"label": "Chip performance per dollar", "kind": "growth", "factor": 1.49, "range": [1.36, 1.66], "text": "AI chip performance per dollar since 2023."},
-         {"label": "Memory bandwidth", "kind": "growth", "factor": 1.28, "range": [1.24, 1.33], "text": "Memory bandwidth of GPUs since 2008."},
-         {"label": "FLOP/s per watt", "kind": "growth", "factor": 1.34, "range": [1.29, 1.39], "text": "GPUs have become more energy efficient each year since 2008."},
-         {"label": "Adoption of numerical formats", "kind": "plain", "display": "3–4", "unit": "years", "text": "Widespread adoption of new numeric formats took 3–4 years in past cycles."}
-       ],
-       "data": {"title": "ML hardware", "text": "Key data on AI accelerators, such as GPUs and TPUs.", "href": "https://epoch.ai/data/machine-learning-hardware"}}
-    ]
-  },
-
-  "data": {
-    "title": "Data on AI",
-    "lede": "The Epoch AI Database collects key data on machine learning models, benchmarks, data centers, chip sales, hardware, and companies, for policymakers, researchers, and anyone working towards responsible AI.",
-    "featured": [
-      {"title": "Capabilities & benchmarking", "updated": "Nov. 15, 2026", "text": "Track the performance of leading AI models on challenging benchmarks, with insights into compute and accessibility.", "href": "/benchmarks", "color": "#009af1", "stat": "99 benchmarks"},
-      {"title": "AI models", "updated": "Nov. 13, 2026", "text": "The largest public database of its kind, tracking over 3,700 machine learning models from 1950 to today.", "href": "https://epoch.ai/data/ai-models", "color": "#00a5a6", "stat": "3,700+ models"},
-      {"title": "AI data centers", "updated": "Nov. 12, 2026", "text": "Open database of large AI data centers, using satellite and permit data to estimate compute, power use, and construction timelines.", "href": "https://epoch.ai/data/ai-data-centers", "color": "#ea8d00", "stat": "Satellite + permits"},
-      {"title": "AI chip sales", "updated": "Oct. 21, 2026", "text": "Financial reports and company disclosures used to estimate compute, power usage, and spending for a wide variety of AI chips.", "href": "https://epoch.ai/data/ai-chip-sales", "color": "#6a3ecb", "stat": "Quarterly"}
-    ],
-    "more": [
-      {"title": "AI chip components", "updated": "Jul. 23, 2026", "group": "Chips", "text": "How much advanced logic wafer capacity, CoWoS packaging, and HBM memory leading AI chip designers consumed."},
-      {"title": "AI chip imports", "updated": "Nov. 12, 2026", "group": "Chips", "text": "Global customs and domestic production data used to estimate the geographic distribution of AI chips."},
-      {"title": "AI chip owners", "updated": "May 12, 2026", "group": "Chips", "text": "How the world’s leading AI chips and compute capacity are distributed among major players and customer categories."},
-      {"title": "AI chip users", "updated": "Sep. 9, 2026", "group": "Chips", "text": "How much computing power the leading AI developers rent or use, in Nvidia H100-equivalents."},
-      {"title": "AI companies", "updated": "Nov. 10, 2026", "group": "Industry", "text": "Revenue, funding, staff, and compute for many of the key players in frontier AI."},
-      {"title": "AI use in research", "updated": "Nov. 9, 2026", "group": "Adoption", "text": "The share of papers acknowledging large language model use in physics, biology, statistics, and math."},
-      {"title": "AI use in math research", "updated": "Nov. 9, 2026", "group": "Adoption", "text": "The number and types of AI use acknowledgments in math research papers submitted to arXiv."},
-      {"title": "ChatGPT usage", "updated": "Oct. 1, 2026", "group": "Adoption", "text": "Aggregate metadata from recorded ChatGPT histories of 5,000 US YouGov panelists, December 2022 to December 2025."},
-      {"title": "Cyber vulnerabilities", "updated": "Nov. 15, 2026", "group": "Security", "text": "Trends in software and hardware vulnerabilities (CVEs) since 2020, broken down by the organizations that report them."},
-      {"title": "Frontier lab hiring", "updated": "Nov. 15, 2026", "group": "Industry", "text": "Daily archive of Anthropic’s and OpenAI’s job postings."},
-      {"title": "GPU clusters", "updated": "Mar. 13, 2026", "group": "Infrastructure", "text": "Over 500 GPU clusters and supercomputers, including those used for AI training and inference."},
-      {"title": "Machine learning hardware", "updated": "Nov. 6, 2026", "group": "Infrastructure", "text": "Key data on over 180 AI accelerators, such as GPUs and TPUs."},
-      {"title": "Polling on AI usage", "updated": "Nov. 5, 2026", "group": "Adoption", "text": "How Americans use and feel about AI, at home and at work, across demographics."}
-    ]
-  },
-
-  "benchmarks": {
-    "updated": "Nov. 15, 2026",
-    "title": "AI benchmarks & capabilities",
-    "lede": "Our database of benchmark results features the performance of leading AI models on challenging tasks, from benchmarks we run ourselves and from external sources.",
+ "latest": {
+  "title": "Our latest work",
+  "lede": "Explore Epoch AI’s most recent work, including research papers, data insights, our newsletter, and podcast.",
+  "items": [
+   {
+    "type": "Report",
+    "date": "Nov. 13, 2026",
+    "iso": "2026-11-13",
+    "topic": "Organizational updates",
+    "title": "Incident report: AI agents attempted exploits on our website during a third-party alignment evaluation",
+    "summary": "Three October 2026 events involving Trajectory Labs, PBC, in which agents probed our site and impersonated staff. No private data was accessed.",
+    "authors": "The Epoch AI Team"
+   },
+   {
+    "type": "Report",
+    "date": "Nov. 9, 2026",
+    "iso": "2026-11-09",
+    "topic": "Chips",
+    "title": "Inference Performance Index: changing the way we measure inference capacity",
+    "summary": "Comparing AI hardware for inference beyond FLOP/s with memory and inter-chip communication.",
+    "authors": "Jason Li"
+   },
+   {
+    "type": "Report",
+    "date": "Nov. 6, 2026",
+    "iso": "2026-11-06",
+    "topic": "Geopolitics",
+    "title": "What Huawei’s Horinger data center reveals about China’s compute gap",
+    "summary": "Huawei’s AI data center in Horinger, Inner Mongolia, uses Ascend chips and has an estimated AI computing capacity that is just 7% that of the world’s largest AI data center, SpaceX’s Colossus 2 in Tennessee.",
+    "authors": "Ben Cottier"
+   },
+   {
+    "type": "Data Insight",
+    "date": "Nov. 4, 2026",
+    "iso": "2026-11-04",
+    "topic": "Chips",
+    "title": "Broadcom TPU compute shipments doubled from Q2 to Q3 2026, reaching 2 million H100-equivalents",
+    "summary": "Broadcom’s shipments of TPU by unit volume increased by about 65% quarter over quarter to roughly 800,000 chips, while compute output doubled, driven by a shift to more powerful chips.",
+    "authors": "Venkat Somala and Josh You"
+   },
+   {
+    "type": "Report",
+    "date": "Nov. 4, 2026",
+    "iso": "2026-11-04",
+    "topic": "Capabilities",
+    "title": "Updating the Epoch Capabilities Index methodology to use a Bayesian model",
+    "summary": "A Bayesian model gives the ECI better-justified uncertainty estimates and lets us compare models directly.",
+    "authors": "Emilia Álvarez and Alexander Barry"
+   },
+   {
+    "type": "Data Insight",
+    "date": "Oct. 30, 2026",
+    "iso": "2026-10-30",
+    "topic": "Adoption and use",
+    "title": "LLM use is acknowledged almost as often as specialized AI tools in biology preprints",
+    "summary": "17% of biology preprints acknowledge LLM use, nearly matching specialized tools like AlphaFold.",
+    "authors": "Tara Abrishami"
+   },
+   {
+    "type": "Report",
+    "date": "Oct. 29, 2026",
+    "iso": "2026-10-29",
+    "topic": "Cybersecurity",
+    "title": "AI can turn security fixes into working exploits before users receive an update",
+    "summary": "GLM 5.3 turned published-but-unshipped Firefox security fixes into working one-click exploits for six releases, at roughly $1,000 each.",
+    "authors": "Aiden Ament, Yafah Edelman, Alexander Barry, Timothée Chauvin, Lee Bousfield, and Jaeho Lee"
+   },
+   {
+    "type": "Data Insight",
+    "date": "Oct. 29, 2026",
+    "iso": "2026-10-29",
+    "topic": "Chips",
+    "title": "New global AI computing capacity is doubling every 9 months",
+    "summary": "The computing power of AI chips sold each quarter has grown about 2.5× per year since 2024, down from a surge in 2023.",
+    "authors": "Isabel Juniewicz and Josh You"
+   },
+   {
+    "type": "Update",
+    "date": "Oct. 27, 2026",
+    "iso": "2026-10-27",
+    "topic": "Geopolitics",
+    "title": "Introducing the AI Chip Imports explorer",
+    "summary": "Our explorer uses customs records to estimate national shares. Since 2022, 72% of AI compute has ended up in the US and about 10% in China, including chips China makes itself.",
+    "authors": "Lucio Melito and Isabel Juniewicz"
+   },
+   {
+    "type": "Data Insight",
+    "date": "Oct. 16, 2026",
+    "iso": "2026-10-16",
+    "topic": "Open models",
+    "title": "Open-weight models trail closed models in cyber capabilities by 6–7 months",
+    "summary": "Z.ai’s GLM-5.3 is the top open-weight model on Epoch’s Cyber ECI, scoring where the closed-weight frontier stood 6–7 months earlier.",
+    "authors": "Jaeho Lee and Alexander Barry"
+   }
+  ]
+ },
+ "insights": {
+  "title": "Data Insights",
+  "lede": "Complex AI trends broken down into focused, digestible snapshots: training compute, hardware advances, AI training costs and more.",
+  "featured": [
+   {
+    "date": "Jan. 9, 2026",
+    "iso": "2026-01-09",
+    "title": "Global AI computing capacity is doubling every 7 months",
+    "color": "#00a5a6"
+   },
+   {
+    "date": "Jul. 2, 2026",
+    "iso": "2026-07-02",
+    "title": "Disclosure of serious cyber vulnerabilities spiked around the release of Claude Mythos Preview",
+    "color": "#6a3ecb"
+   },
+   {
+    "date": "Mar. 12, 2025",
+    "iso": "2025-03-12",
+    "title": "LLM inference prices have fallen rapidly but unequally across tasks",
+    "color": "#009af1"
+   }
+  ],
+  "items": [
+   {
+    "date": "Nov. 4, 2026",
+    "iso": "2026-11-04",
+    "topic": "Chips",
+    "title": "Broadcom TPU compute shipments doubled from Q2 to Q3 2026, reaching 2 million H100-equivalents",
+    "summary": "TPU unit volume rose about 65% quarter over quarter to roughly 800,000 chips, while compute output doubled, driven by a shift to more powerful chips.",
+    "authors": "Venkat Somala and Josh You"
+   },
+   {
+    "date": "Oct. 30, 2026",
+    "iso": "2026-10-30",
+    "topic": "Adoption and use",
+    "title": "LLM use is acknowledged almost as often as specialized AI tools in biology preprints",
+    "summary": "17% of biology preprints acknowledge LLM use, nearly matching specialized tools like AlphaFold.",
+    "authors": "Tara Abrishami"
+   },
+   {
+    "date": "Oct. 29, 2026",
+    "iso": "2026-10-29",
+    "topic": "Chips",
+    "title": "New global AI computing capacity is doubling every 9 months",
+    "summary": "The computing power of AI chips sold each quarter has grown about 2.5× per year since 2024, down from a surge in 2023.",
+    "authors": "Isabel Juniewicz and Josh You"
+   },
+   {
+    "date": "Oct. 16, 2026",
+    "iso": "2026-10-16",
+    "topic": "Cybersecurity",
+    "title": "Open-weight models trail closed models in cyber capabilities by 6–7 months",
+    "summary": "Z.ai’s GLM-5.3 is the top open-weight model on Epoch’s Cyber ECI, scoring where the closed-weight frontier stood 6–7 months earlier.",
+    "authors": "Jaeho Lee and Alexander Barry"
+   },
+   {
+    "date": "Oct. 7, 2026",
+    "iso": "2026-10-07",
+    "topic": "Cybersecurity",
+    "title": "US adults are no more likely to face cyber incidents than when Claude Fable 5 launched",
+    "summary": "June and September polls from Epoch AI/Ipsos show no detectable increase in the share of US adults experiencing cyber incidents.",
+    "authors": "Caroline Falkman Olsson and Yafah Edelman"
+   },
+   {
+    "date": "Oct. 5, 2026",
+    "iso": "2026-10-05",
+    "topic": "Leading companies",
+    "title": "Coding-agent spending by OpenAI researchers is doubling roughly every month",
+    "summary": "OpenAI researchers’ coding-agent usage, valued at API prices, has recently been doubling roughly every month, according to breakpoint fits.",
+    "authors": "Yafah Edelman and Luke Emberson"
+   },
+   {
+    "date": "Sep. 18, 2026",
+    "iso": "2026-09-18",
+    "topic": "Math",
+    "title": "In August, 25% of math preprints acknowledged AI use, up from 4% in April",
+    "summary": "Acknowledgments of AI use in arXiv math preprints rose from 4% in April 2026 to 25% in August, with 6% crediting AI with a substantial research contribution.",
+    "authors": "Tara Abrishami"
+   },
+   {
+    "date": "Sep. 17, 2026",
+    "iso": "2026-09-17",
+    "topic": "Geopolitics",
+    "title": "Trade data is consistent with more than $3 billion of chips smuggled into China via Malaysia",
+    "summary": "China recorded $3.8B of server imports from Malaysia in 2024–25; Malaysia recorded only $0.6B of exports.",
+    "authors": "Isabel Juniewicz"
+   },
+   {
+    "date": "Sep. 16, 2026",
+    "iso": "2026-09-16",
+    "topic": "Capabilities",
+    "title": "GPT-6 Astra leads on math benchmarks, but not on software engineering",
+    "summary": "GPT-6 Astra tops the ECI with a score of 166, and its Math-ECI of 170 sets a new record, but its SWE-ECI of 164 still lags Fable 5.1’s 167.",
+    "authors": "Alexander Barry and Jaeho Lee"
+   }
+  ]
+ },
+ "trends": {
+  "updated": "Feb. 5, 2026",
+  "title": "Trends in AI",
+  "lede": "Frontier AI systems are advancing rapidly from increases in compute, hardware performance, software efficiency, and investment. This dashboard explores those dynamics.",
+  "intro": [
+   "What drives AI progress? The story is dominated by scale. Training AI systems with more compute, power and data has consistently led to better performance. Since 2020, the compute used to train frontier language models has increased 5× per year.",
+   "This scale-up comes from three sources: deploying more chips in parallel, training for longer, and leveraging increasingly powerful and cost-effective AI processors. Training costs are climbing by 3.5× annually, and today’s largest AI data centers are approaching a gigawatt of power capacity, enough to power roughly a million US homes."
+  ],
+  "groups": [
+   {
+    "id": "model-performance",
+    "name": "Model performance",
+    "color": "#00a5a6",
+    "headline": "The ECI frontier has advanced by 14 points per year since the introduction of reasoning models.",
+    "text": "Following the first reasoning models (OpenAI’s o1-mini and o1-preview) in September 2024, the Epoch Capabilities Index frontier has advanced linearly by 14 points per year, compared with 6 points per year for non-reasoning models.",
     "stats": [
-      {"value": 173, "label": "Top Epoch Capabilities Index score", "note": "Held by Claude Fable 5.2", "text": "The ECI combines scores from many AI benchmarks into a single “general capability” scale.", "cta": "Go to ECI", "href": "https://epoch.ai/eci", "color": "#00a5a6"},
-      {"value": 428, "label": "Models tracked", "text": "Pricing, architecture, and training information, and how models compare across benchmarks.", "cta": "Go to models", "href": "https://epoch.ai/data/ai-models", "color": "#009af1"},
-      {"value": 99, "label": "Benchmarks tracked", "text": "Epoch-created and external evaluations covering mathematics, coding, and more.", "cta": "Go to benchmarks", "href": "https://epoch.ai/benchmarks", "color": "#6a3ecb"}
+     {
+      "label": "Model capabilities",
+      "kind": "linear",
+      "display": "+14",
+      "unit": "ECI / year",
+      "text": "The ECI frontier has advanced by 14 points per year since reasoning models arrived.",
+      "ci": "+12 to +17 ECI"
+     },
+     {
+      "label": "SOTA vs. consumer hardware",
+      "kind": "plain",
+      "display": "8",
+      "unit": "months",
+      "text": "Frontier AI performance becomes accessible on consumer hardware within a year."
+     },
+     {
+      "label": "LLM context windows",
+      "kind": "growth",
+      "factor": 30,
+      "range": [
+       10,
+       50
+      ],
+      "text": "LLM context windows have grown by 30× per year since 2023."
+     }
     ],
-    "activity": [
-      {"date": "Nov. 9, 2026", "iso": "2026-11-09", "title": "Claude Fable 5.2 sets a new ECI record", "text": "Based on pre-launch testing using only our own benchmarks; may change as more results become available."},
-      {"date": "Nov. 4, 2026", "iso": "2026-11-04", "title": "Updating the ECI methodology", "text": "The Epoch Capabilities Index now uses a Bayesian model, which gives better-justified uncertainty estimates and lets us compare models directly."},
-      {"date": "Sep. 3, 2026", "iso": "2026-09-03", "title": "Announcing FrontierMath Erdős", "text": "68 unsolved Erdős problems, with AI systems tasked with writing solutions in Lean. GPT-6.1 Sol leads so far, solving 3 of 68 (4%)."}
+    "data": {
+     "title": "Benchmarking",
+     "text": "Track and compare frontier model performance across 40+ evaluations",
+     "href": "/benchmarks"
+    }
+   },
+   {
+    "id": "ai-companies",
+    "name": "AI companies",
+    "color": "#6a3ecb",
+    "headline": "The aggregate computing power of AI chips sold each quarter is growing at 2.5× per year.",
+    "text": "Quarterly additions of computing capacity have grown about 2.5× per year since 2024, down from roughly 6× in 2023, which saw a surge following ChatGPT, GPT-4 and Nvidia’s H100.",
+    "stats": [
+     {
+      "label": "New compute growth",
+      "kind": "growth",
+      "factor": 2.5,
+      "range": [
+       2.3,
+       2.7
+      ],
+      "text": "Growth in the aggregate computing power of AI chips sold each quarter."
+     },
+     {
+      "label": "OpenAI revenue growth",
+      "kind": "growth",
+      "factor": 3.2,
+      "range": [
+       3.0,
+       3.4
+      ],
+      "text": "OpenAI’s annualized revenue has grown by 3.2× per year since 2024."
+     },
+     {
+      "label": "Frontier inference compute",
+      "kind": "plain",
+      "display": "30",
+      "unit": "%",
+      "text": "Only 30% of OpenAI’s compute spending in 2024 was used on inference."
+     },
+     {
+      "label": "Frontier AI investment",
+      "kind": "plain",
+      "display": "$370",
+      "unit": "billion",
+      "text": "Frontier AI labs have raised more than $370 billion."
+     }
     ],
-    "sets": ["Math", "Software engineering", "Epoch administered", "Knowledge & reasoning"],
-    "faq": [
-      {"q": "How did you choose what benchmarks to evaluate on?", "a": "For benchmarks we run ourselves, we started with GPQA Diamond and MATH Level 5 because they were convenient to run, not yet saturated, and widely used. We then added harder sets such as Mock AIME 2024–2025, FrontierMath for extremely difficult mathematics, and SWE-bench Verified for resolving realistic GitHub issues. For external benchmarks we prioritize ones that capture economically valuable real-world tasks, are rigorously evaluated and widely used, and would be prohibitively expensive for us to run."},
-      {"q": "How did you choose which models to evaluate?", "a": "Our top priority is tracking state-of-the-art performance, so we prioritize leading releases from the main AI labs. We are also interested in the best models with downloadable weights, from countries other than the US, or where we have training compute estimates, so we can study how performance varies with accessibility, origin, and compute. We only evaluate the chat or instruct version of each model."},
-      {"q": "Can I use this data?", "a": "Yes. Epoch AI’s work is free to use, distribute, and reproduce provided the source and authors are credited under the Creative Commons Attribution license."}
+    "data": {
+     "title": "Companies",
+     "text": "Data on key organizations and labs driving AI development worldwide.",
+     "href": "/data/ai-companies"
+    }
+   },
+   {
+    "id": "training-runs",
+    "name": "Training runs",
+    "color": "#009af1",
+    "headline": "Training compute for frontier language models has been growing at 5× per year since 2020.",
+    "text": "The amount of compute used to train frontier language models has grown exponentially. Since 2020, the trend among top-5 models has grown by a factor of about 10,000.",
+    "stats": [
+     {
+      "label": "Training compute",
+      "kind": "growth",
+      "factor": 5,
+      "range": [
+       4,
+       6
+      ],
+      "text": "Training compute for frontier language models since 2020."
+     },
+     {
+      "label": "Training cost",
+      "kind": "growth",
+      "factor": 3.5,
+      "range": [
+       2.8,
+       4.4
+      ],
+      "text": "The cost to train frontier language models has increased by 3.5× per year since 2020."
+     }
+    ],
+    "data": {
+     "title": "Models",
+     "text": "Database of AI systems tracked by training compute, organization, and release date.",
+     "href": "/data/ai-models"
+    }
+   },
+   {
+    "id": "data-centers",
+    "name": "Data centers",
+    "color": "#ea8d00",
+    "headline": "The largest known AI data center has a computing capacity equivalent to 1.1 million NVIDIA H100 chips.",
+    "text": "SpaceXAI’s Colossus 2 in Memphis, Tennessee has an estimated capacity of 1.1 million H100-equivalents. Meta Hyperion is expected to have over 3× more, at 3.7M H100-equivalents by January 2028.",
+    "stats": [
+     {
+      "label": "Largest AI data center",
+      "kind": "plain",
+      "display": "1,100,000",
+      "unit": "H100e",
+      "text": "Computing capacity of the largest known AI data center."
+     },
+     {
+      "label": "Build time",
+      "kind": "plain",
+      "display": "2.1",
+      "unit": "years",
+      "text": "Gigawatt-scale data centers can be built in about 2 years.",
+      "ci": "1 to 3.6 years"
+     },
+     {
+      "label": "Cost per gigawatt",
+      "kind": "plain",
+      "display": "$38",
+      "unit": "billion",
+      "text": "Typical up-front capital expenditure for an AI data center with 1 GW of IT power."
+     },
+     {
+      "label": "Hyperscaler compute share",
+      "kind": "plain",
+      "display": "71",
+      "unit": "%",
+      "text": "Five hyperscalers own over two-thirds of global AI compute."
+     }
+    ],
+    "data": {
+     "title": "AI data centers",
+     "text": "AI data centers tracked via satellite imagery and permit data.",
+     "href": "/data/ai-data-centers"
+    }
+   },
+   {
+    "id": "hardware",
+    "name": "Hardware",
+    "color": "#e62c11",
+    "headline": "AI chip performance per dollar has grown by 49% per year since 2023.",
+    "text": "Since 2023, the average dollar spent on AI chips has bought about 49% more performance each year, in constant 2025 dollars. Gains come in spurts as spending shifts to each new chip generation.",
+    "stats": [
+     {
+      "label": "Chip performance per dollar",
+      "kind": "growth",
+      "factor": 1.49,
+      "range": [
+       1.36,
+       1.66
+      ],
+      "text": "AI chip performance per dollar since 2023."
+     },
+     {
+      "label": "Memory bandwidth",
+      "kind": "growth",
+      "factor": 1.28,
+      "range": [
+       1.24,
+       1.33
+      ],
+      "text": "Memory bandwidth of GPUs since 2008."
+     },
+     {
+      "label": "FLOP/s per watt",
+      "kind": "growth",
+      "factor": 1.34,
+      "range": [
+       1.29,
+       1.39
+      ],
+      "text": "GPUs have become more energy efficient each year since 2008."
+     },
+     {
+      "label": "Adoption of numerical formats",
+      "kind": "plain",
+      "display": "3–4",
+      "unit": "years",
+      "text": "Widespread adoption of new numeric formats took 3–4 years in past cycles."
+     }
+    ],
+    "data": {
+     "title": "ML hardware",
+     "text": "Key data on AI accelerators, such as GPUs and TPUs.",
+     "href": "/data/machine-learning-hardware"
+    }
+   }
+  ]
+ },
+ "data": {
+  "title": "Data on AI",
+  "lede": "The Epoch AI Database collects key data on machine learning models, benchmarks, data centers, chip sales, hardware, and companies, for policymakers, researchers, and anyone working towards responsible AI.",
+  "featured": [
+   {
+    "title": "Capabilities & benchmarking",
+    "updated": "Nov. 15, 2026",
+    "text": "Track the performance of leading AI models on challenging benchmarks, with insights into compute and accessibility.",
+    "href": "/benchmarks",
+    "color": "#009af1",
+    "stat": "99 benchmarks"
+   },
+   {
+    "title": "AI models",
+    "updated": "Nov. 13, 2026",
+    "text": "The largest public database of its kind, tracking over 3,700 machine learning models from 1950 to today.",
+    "href": "/data/ai-models",
+    "color": "#00a5a6",
+    "stat": "3,700+ models"
+   },
+   {
+    "title": "AI data centers",
+    "updated": "Nov. 12, 2026",
+    "text": "Open database of large AI data centers, using satellite and permit data to estimate compute, power use, and construction timelines.",
+    "href": "/data/ai-data-centers",
+    "color": "#ea8d00",
+    "stat": "Satellite + permits"
+   },
+   {
+    "title": "AI chip sales",
+    "updated": "Oct. 21, 2026",
+    "text": "Financial reports and company disclosures used to estimate compute, power usage, and spending for a wide variety of AI chips.",
+    "href": "/data/ai-chip-sales",
+    "color": "#6a3ecb",
+    "stat": "Quarterly"
+   }
+  ],
+  "more": [
+   {
+    "title": "AI chip components",
+    "updated": "Jul. 23, 2026",
+    "group": "Chips",
+    "text": "How much advanced logic wafer capacity, CoWoS packaging, and HBM memory leading AI chip designers consumed."
+   },
+   {
+    "title": "AI chip imports",
+    "updated": "Nov. 12, 2026",
+    "group": "Chips",
+    "text": "Global customs and domestic production data used to estimate the geographic distribution of AI chips."
+   },
+   {
+    "title": "AI chip owners",
+    "updated": "May 12, 2026",
+    "group": "Chips",
+    "text": "How the world’s leading AI chips and compute capacity are distributed among major players and customer categories."
+   },
+   {
+    "title": "AI chip users",
+    "updated": "Sep. 9, 2026",
+    "group": "Chips",
+    "text": "How much computing power the leading AI developers rent or use, in Nvidia H100-equivalents."
+   },
+   {
+    "title": "AI companies",
+    "updated": "Nov. 10, 2026",
+    "group": "Industry",
+    "text": "Revenue, funding, staff, and compute for many of the key players in frontier AI."
+   },
+   {
+    "title": "AI use in research",
+    "updated": "Nov. 9, 2026",
+    "group": "Adoption",
+    "text": "The share of papers acknowledging large language model use in physics, biology, statistics, and math."
+   },
+   {
+    "title": "AI use in math research",
+    "updated": "Nov. 9, 2026",
+    "group": "Adoption",
+    "text": "The number and types of AI use acknowledgments in math research papers submitted to arXiv."
+   },
+   {
+    "title": "ChatGPT usage",
+    "updated": "Oct. 1, 2026",
+    "group": "Adoption",
+    "text": "Aggregate metadata from recorded ChatGPT histories of 5,000 US YouGov panelists, December 2022 to December 2025."
+   },
+   {
+    "title": "Cyber vulnerabilities",
+    "updated": "Nov. 15, 2026",
+    "group": "Security",
+    "text": "Trends in software and hardware vulnerabilities (CVEs) since 2020, broken down by the organizations that report them."
+   },
+   {
+    "title": "Frontier lab hiring",
+    "updated": "Nov. 15, 2026",
+    "group": "Industry",
+    "text": "Daily archive of Anthropic’s and OpenAI’s job postings."
+   },
+   {
+    "title": "GPU clusters",
+    "updated": "Mar. 13, 2026",
+    "group": "Infrastructure",
+    "text": "Over 500 GPU clusters and supercomputers, including those used for AI training and inference."
+   },
+   {
+    "title": "Machine learning hardware",
+    "updated": "Nov. 6, 2026",
+    "group": "Infrastructure",
+    "text": "Key data on over 180 AI accelerators, such as GPUs and TPUs."
+   },
+   {
+    "title": "Polling on AI usage",
+    "updated": "Nov. 5, 2026",
+    "group": "Adoption",
+    "text": "How Americans use and feel about AI, at home and at work, across demographics."
+   }
+  ]
+ },
+ "benchmarks": {
+  "updated": "Nov. 15, 2026",
+  "title": "AI benchmarks & capabilities",
+  "lede": "Our database of benchmark results features the performance of leading AI models on challenging tasks, from benchmarks we run ourselves and from external sources.",
+  "stats": [
+   {
+    "value": 173,
+    "label": "Top Epoch Capabilities Index score",
+    "note": "Held by Claude Fable 5.2",
+    "text": "The ECI combines scores from many AI benchmarks into a single “general capability” scale.",
+    "cta": "Go to ECI",
+    "href": "/benchmarks/eci",
+    "color": "#00a5a6"
+   },
+   {
+    "value": 428,
+    "label": "Models tracked",
+    "text": "Pricing, architecture, and training information, and how models compare across benchmarks.",
+    "cta": "Go to models",
+    "href": "/data/ai-models",
+    "color": "#009af1"
+   },
+   {
+    "value": 99,
+    "label": "Benchmarks tracked",
+    "text": "Epoch-created and external evaluations covering mathematics, coding, and more.",
+    "cta": "Go to benchmarks",
+    "href": "#our-benchmarks",
+    "color": "#6a3ecb"
+   }
+  ],
+  "activity": [
+   {
+    "date": "Nov. 9, 2026",
+    "iso": "2026-11-09",
+    "title": "Claude Fable 5.2 sets a new ECI record",
+    "text": "Based on pre-launch testing using only our own benchmarks; may change as more results become available."
+   },
+   {
+    "date": "Nov. 4, 2026",
+    "iso": "2026-11-04",
+    "title": "Updating the ECI methodology",
+    "text": "The Epoch Capabilities Index now uses a Bayesian model, which gives better-justified uncertainty estimates and lets us compare models directly."
+   },
+   {
+    "date": "Sep. 3, 2026",
+    "iso": "2026-09-03",
+    "title": "Announcing FrontierMath Erdős",
+    "text": "68 unsolved Erdős problems, with AI systems tasked with writing solutions in Lean. GPT-6.1 Sol leads so far, solving 3 of 68 (4%)."
+   }
+  ],
+  "sets": [
+   "Math",
+   "Software engineering",
+   "Epoch administered",
+   "Knowledge & reasoning"
+  ],
+  "faq": [
+   {
+    "q": "How did you choose what benchmarks to evaluate on?",
+    "a": "For benchmarks we run ourselves, we started with GPQA Diamond and MATH Level 5 because they were convenient to run, not yet saturated, and widely used. We then added harder sets such as Mock AIME 2024–2025, FrontierMath for extremely difficult mathematics, and SWE-bench Verified for resolving realistic GitHub issues. For external benchmarks we prioritize ones that capture economically valuable real-world tasks, are rigorously evaluated and widely used, and would be prohibitively expensive for us to run."
+   },
+   {
+    "q": "How did you choose which models to evaluate?",
+    "a": "Our top priority is tracking state-of-the-art performance, so we prioritize leading releases from the main AI labs. We are also interested in the best models with downloadable weights, from countries other than the US, or where we have training compute estimates, so we can study how performance varies with accessibility, origin, and compute. We only evaluate the chat or instruct version of each model."
+   },
+   {
+    "q": "Can I use this data?",
+    "a": "Yes. Epoch AI’s work is free to use, distribute, and reproduce provided the source and authors are credited under the Creative Commons Attribution license."
+   }
+  ]
+ },
+ "topics": {
+  "title": "Topics",
+  "lede": "Data, charts, and analysis on each area of AI’s trajectory: the forces driving AI forward, the progress of capabilities, and AI’s growing impact on the economy, the workforce, and the global balance of power.",
+  "groups": [
+   {
+    "name": "AI progress",
+    "color": "#00a5a6",
+    "text": "How fast models improve, and why.",
+    "items": [
+     [
+      "Scaling",
+      "/topics/scaling"
+     ],
+     [
+      "Software progress",
+      "/topics/software-progress"
+     ],
+     [
+      "Open models",
+      "/topics/open-models"
+     ],
+     [
+      "Capabilities",
+      "/topics/capabilities"
+     ],
+     [
+      "Math",
+      "/topics/math"
+     ]
     ]
-  },
-
-  "topics": {
-    "title": "Topics",
-    "lede": "Data, charts, and analysis on each area of AI’s trajectory: the forces driving AI forward, the progress of capabilities, and AI’s growing impact on the economy, the workforce, and the global balance of power.",
-    "groups": [
-      {"name": "AI progress", "color": "#00a5a6", "text": "How fast models improve, and why.", "items": [["Scaling", "/topics/scaling"], ["Software progress", "/topics/software-progress"], ["Open models", "/topics/open-models"], ["Capabilities", "/topics/capabilities"], ["Math", "/topics/math"]]},
-      {"name": "Industry", "color": "#6a3ecb", "text": "The companies and money behind frontier AI.", "items": [["Leading companies", "/topics/leading-companies"], ["Finances", "/topics/finances"], ["Geopolitics", "/topics/geopolitics"]]},
-      {"name": "Infrastructure", "color": "#ea8d00", "text": "Chips, data centers, and the power they need.", "items": [["Chips", "/topics/chips"], ["Data centers", "/topics/data-centers"], ["Energy", "/topics/energy"]]},
-      {"name": "Impacts", "color": "#e62c11", "text": "What AI changes for people, work, and the world.", "items": [["Adoption and use", "/topics/adoption-and-use"], ["Economic impact", "/topics/economic-impact"], ["Future of AI", "/topics/future-of-ai"], ["AI impacts observatory", "/topics/ai-impacts"]]}
+   },
+   {
+    "name": "Industry",
+    "color": "#6a3ecb",
+    "text": "The companies and money behind frontier AI.",
+    "items": [
+     [
+      "Leading companies",
+      "/topics/leading-companies"
+     ],
+     [
+      "Finances",
+      "/topics/finances"
+     ],
+     [
+      "Geopolitics",
+      "/topics/geopolitics"
+     ]
     ]
-  },
-
-  "about": {
-    "title": "Making sense of AI",
-    "lede": "Epoch AI was founded to help people understand what is happening in AI from a neutral perspective, grounded in the best possible evidence.",
-    "mission": "Our goal is to improve society’s understanding of the drivers, progress, and impact of artificial intelligence. We build a shared scientific foundation for thinking about AI, neutral to any specific agenda, so decisions about this technology are informed by the best available data.",
-    "pillars": [
-      {"name": "Drivers", "color": "#00a5a6", "text": "We investigate the drivers and bottlenecks of AI progress and scaling. We were among the first to systematically monitor trends in training compute, and we host leading databases on ML hardware, training compute, investment, GPU clusters, and AI data centers."},
-      {"name": "Progress", "color": "#009af1", "text": "We measure and track the capabilities of AI systems over time, regularly run independent evaluations of new models, review prominent benchmarks, and create new ones such as FrontierMath."},
-      {"name": "Impacts", "color": "#6a3ecb", "text": "We build scientifically grounded models to forecast AI’s impact on the economy, and run polls and interviews on how AI is used and perceived by academics, AI researchers, and the general population."}
-    ],
-    "history": [
-      {"year": "2021", "text": "Started as a group of volunteers collecting and analyzing data on hundreds of machine learning models, aiming for rigor and empiricism in place of hype."},
-      {"year": "2022", "text": "A widely cited paper on training compute trends leads the group to found Epoch AI and scale up its research."},
-      {"year": "Today", "text": "A multidisciplinary, global, curiosity-driven team helping people and organizations understand and navigate the rapid evolution of AI."}
-    ],
-    "values": [
-      {"name": "Be relentlessly curious", "text": "We’re obsessed with understanding AI, and we update our views as new evidence comes in."},
-      {"name": "Publish openly", "text": "We default to publishing our research, and showing how we reached our conclusions."},
-      {"name": "Stay impartial", "text": "We study facts without an agenda, that everyone can use to inform their thinking."},
-      {"name": "Prioritize ruthlessly", "text": "We work on the questions that hold the most promise for advancing understanding."},
-      {"name": "Communicate clearly", "text": "We explain our research clearly and compellingly, with interactive visualizations and tools."},
-      {"name": "Act with urgency", "text": "Time is our scarcest resource. We move fast and seek feedback early to keep up with the exponential."},
-      {"name": "Look after each other", "text": "We want our team to enjoy working at Epoch, and to succeed beyond the goals of the organization."}
-    ],
-    "partners": "Our past and ongoing partnerships include Stanford’s AI Index and the UK’s Department for Science, Innovation & Technology, among others."
-  },
-
-  "team": {
-    "title": "Our team",
-    "lede": "Meet the multidisciplinary team behind Epoch AI.",
-    "groups": [
-      {"name": "Leadership", "people": [["Jaime Sevilla", "CEO"], ["María de la Lama", "COO"], ["Yafah Edelman", "CSO"], ["Bret Sepulveda", "CTO"], ["Greg Burnham", "Head of Benchmarks"], ["Jeremy Self", "Head of Web Development"], ["Kyla Wills", "Head of People"], ["Alexander Barry", "Head of Capabilities Tracking"]]},
-      {"name": "Research", "people": [["David Owen", "Senior Researcher"], ["Anson Ho", "Senior Researcher"], ["Ben Cottier", "Senior Researcher"], ["Isabel Juniewicz", "Senior Researcher"], ["Campbell Hutcheson", "Senior Researcher"], ["Phil Trammell", "Senior Researcher"], ["Michelle Campeau", "Senior Researcher"], ["Håvard Tveit Ihle", "Senior Researcher"], ["Benjamin Ou", "Researcher"], ["Josh You", "Researcher"], ["Luke Emberson", "Researcher"], ["Venkat Somala", "Researcher"], ["Caroline Falkman Olsson", "Researcher"], ["Daniel Carey", "Researcher"], ["Samuel Prieto", "Researcher"], ["Tara Abrishami", "Researcher"], ["Jaeho Lee", "Researcher"], ["Kelly Hong", "Researcher"], ["Aiden Ament", "Researcher"], ["Jason Li", "Researcher"], ["Lucio Melito", "Researcher"], ["Emilia Álvarez", "Researcher"], ["Radu Covaci", "Researcher"], ["Amreeta Das", "Researcher"], ["Henry Mann", "Researcher"], ["Axel Campos", "Data Center Analyst"]]},
-      {"name": "Engineering", "people": [["Tom Adamczewski", "Senior Research Engineer"], ["Lee Bousfield", "Senior Software Engineer"], ["Bill Bateman", "Senior Software Engineer"], ["Giles Edkins", "Senior Software Engineer"], ["Naomi Bancroft", "Senior Engineer"], ["Edu Roldán", "Software Engineer"], ["Andrew Souza", "Software Engineer"], ["Jonathan Mustin", "Software Engineer"], ["Aidan Hendrickson", "Software Engineer"], ["Sviatoslav Shatunov", "Software Engineer"], ["H. Ryan Jones", "Web Developer"], ["Avery Yen", "Research Engineer"], ["Timothée Chauvin", "Research Engineer"]]},
-      {"name": "Communications", "people": [["Elliot Stewart", "Lead Editor"], ["Cathy Bogaart", "Communications Specialist"], ["Mike Mantell", "Communications Specialist"]]},
-      {"name": "Operations", "people": [["Pablo Stafforini", "AI Enablement Manager"], ["Vijay Samtani", "Cybersecurity Specialist"], ["Casey Whitcomb", "Finance Manager"], ["Mélanie Girod", "Finance Specialist"], ["Maria Jose Zabaleta", "Compliance and Finance Specialist"], ["Jonah O'Connor", "Recruiter"], ["Rockwell Schwartz", "Events Lead"], ["Roman Coussement", "Special Projects Associate"], ["Dmitriy Khripkov", "Special Projects Associate"], ["Simon Chen", "Executive Associate"], ["Mónica Ulloa", "Executive Assistant"], ["Matt Soens", "People Operations Associate"]]}
-    ],
-    "board": ["Tom Davidson", "Ajeya Cotra", "Jaime Sevilla", "María de la Lama", "Steve Newman"],
-    "advisors": [["Virginia Blanton", "Leadership Advisor"], ["Neil Thompson", "Research Advisor"], ["Nitarshan Rajkumar", "Partnership Advisor"], ["Miles Brundage", "Strategy Advisor"], ["Daniel Kokotajlo", "Research Advisor"]]
-  },
-
-  "consultations": {
-    "title": "Work with our experts",
-    "lede": "Mission-aligned research, model evaluations, and advisory services for companies, nonprofits, and government bodies.",
-    "services": [
-      {"name": "Research reports on AI trends", "text": "Detailed reports on AI trends and bottlenecks, similar in scope and depth to our AI power demand study with EPRI or our Rosetta Stone paper with Google DeepMind."},
-      {"name": "Model evaluation and analysis", "text": "Qualitative and quantitative evaluation of the strengths, weaknesses, and capabilities of AI systems across domains."},
-      {"name": "Data collection and curation", "text": "High-quality, complete data on AI models, training, usage, companies, and infrastructure."},
-      {"name": "Benchmark development", "text": "Quantitative evaluations of AI capabilities and performance, such as the FrontierMath benchmark commissioned by OpenAI."},
-      {"name": "Data-center intelligence", "text": "Monitoring of leading-edge colocation facilities, both for sites we already track and data centers not yet in our database."},
-      {"name": "Technical briefings and explainers", "text": "Complex AI concepts, research, and developments distilled into clear, actionable summaries for key audiences."}
-    ],
-    "onDemand": "For fast, recurring support, we offer retainer-based access to our experts with 24-hour turnaround on your queries: analysis of AI developments or model releases, AI market forecasts, and other support for business decisions.",
-    "clients": ["EU AI Office", "Sequoia Capital", "Bridgewater Associates AIA Labs", "Stanford AI Index", "UK DSIT", "OpenAI"],
-    "highlights": [
-      {"name": "OpenAI", "text": "We developed FrontierMath with OpenAI to evaluate frontier mathematical capabilities, enlisting over 70 expert mathematicians to craft research-level problems."},
-      {"name": "AI Index", "text": "Epoch AI is a data provider for the AI Index Report, the annual report on AI by Stanford’s Institute for Human-Centered Artificial Intelligence."}
+   },
+   {
+    "name": "Infrastructure",
+    "color": "#ea8d00",
+    "text": "Chips, data centers, and the power they need.",
+    "items": [
+     [
+      "Chips",
+      "/topics/chips"
+     ],
+     [
+      "Data centers",
+      "/topics/data-centers"
+     ],
+     [
+      "Energy",
+      "/topics/energy"
+     ]
     ]
-  },
-
-  "careers": {
-    "title": "Join us in understanding the path of AI",
-    "lede": "We’re an interdisciplinary, remote-friendly team working on some of the most important questions about AI.",
-    "roles": [
-      {"team": "Research and Engineering", "title": "Researcher / Senior Researcher", "text": "Improve society’s understanding of AI capabilities and their trajectories."},
-      {"team": "Communications", "title": "Social Video Producer", "text": "Help launch short-form video for our new media program: producing and editing videos about AI for TikTok and Instagram, and shaping how we show up on those platforms."},
-      {"team": "Product & Design", "title": "Design Lead / Head of Design", "text": "Lead UI/UX and data visualization, manage our design team, and translate complex research into intuitive, engaging designs."},
-      {"team": "Product & Design", "title": "Designer / Senior Designer", "text": "Turn complex research on AI into dashboards and data visualizations, specializing in product and web design or in data visualization."},
-      {"team": "Product & Design", "title": "Product Manager, Website", "text": "Decide and manage what gets built in order to communicate our research."}
-    ],
-    "interest": [
-      {"title": "Expression of interest", "text": "We’re always looking for talent in research, operations, engineering, data, and communications. We’ll reach out if there’s an open position that fits."},
-      {"title": "Special Projects Associate", "text": "Provide specialized operations support for our research teams."}
+   },
+   {
+    "name": "Impacts",
+    "color": "#e62c11",
+    "text": "What AI changes for people, work, and the world.",
+    "items": [
+     [
+      "Adoption and use",
+      "/topics/adoption-and-use"
+     ],
+     [
+      "Economic impact",
+      "/topics/economic-impact"
+     ],
+     [
+      "Future of AI",
+      "/topics/future-of-ai"
+     ],
+     [
+      "AI impacts observatory",
+      "/topics/ai-impacts"
+     ]
     ]
-  }
+   }
+  ]
+ },
+ "about": {
+  "title": "Making sense of AI",
+  "lede": "Epoch AI was founded to help people understand what is happening in AI from a neutral perspective, grounded in the best possible evidence.",
+  "mission": "Our goal is to improve society’s understanding of the drivers, progress, and impact of artificial intelligence. We build a shared scientific foundation for thinking about AI, neutral to any specific agenda, so decisions about this technology are informed by the best available data.",
+  "pillars": [
+   {
+    "name": "Drivers",
+    "color": "#00a5a6",
+    "text": "We investigate the drivers and bottlenecks of AI progress and scaling. We were among the first to systematically monitor trends in training compute, and we host leading databases on ML hardware, training compute, investment, GPU clusters, and AI data centers."
+   },
+   {
+    "name": "Progress",
+    "color": "#009af1",
+    "text": "We measure and track the capabilities of AI systems over time, regularly run independent evaluations of new models, review prominent benchmarks, and create new ones such as FrontierMath."
+   },
+   {
+    "name": "Impacts",
+    "color": "#6a3ecb",
+    "text": "We build scientifically grounded models to forecast AI’s impact on the economy, and run polls and interviews on how AI is used and perceived by academics, AI researchers, and the general population."
+   }
+  ],
+  "history": [
+   {
+    "year": "2021",
+    "text": "Started as a group of volunteers collecting and analyzing data on hundreds of machine learning models, aiming for rigor and empiricism in place of hype."
+   },
+   {
+    "year": "2022",
+    "text": "A widely cited paper on training compute trends leads the group to found Epoch AI and scale up its research."
+   },
+   {
+    "year": "Today",
+    "text": "A multidisciplinary, global, curiosity-driven team helping people and organizations understand and navigate the rapid evolution of AI."
+   }
+  ],
+  "values": [
+   {
+    "name": "Be relentlessly curious",
+    "text": "We’re obsessed with understanding AI, and we update our views as new evidence comes in."
+   },
+   {
+    "name": "Publish openly",
+    "text": "We default to publishing our research, and showing how we reached our conclusions."
+   },
+   {
+    "name": "Stay impartial",
+    "text": "We study facts without an agenda, that everyone can use to inform their thinking."
+   },
+   {
+    "name": "Prioritize ruthlessly",
+    "text": "We work on the questions that hold the most promise for advancing understanding."
+   },
+   {
+    "name": "Communicate clearly",
+    "text": "We explain our research clearly and compellingly, with interactive visualizations and tools."
+   },
+   {
+    "name": "Act with urgency",
+    "text": "Time is our scarcest resource. We move fast and seek feedback early to keep up with the exponential."
+   },
+   {
+    "name": "Look after each other",
+    "text": "We want our team to enjoy working at Epoch, and to succeed beyond the goals of the organization."
+   }
+  ],
+  "partners": "Our past and ongoing partnerships include Stanford’s AI Index and the UK’s Department for Science, Innovation & Technology, among others."
+ },
+ "team": {
+  "title": "Our team",
+  "lede": "Meet the multidisciplinary team behind Epoch AI.",
+  "groups": [
+   {
+    "name": "Leadership",
+    "people": [
+     [
+      "Jaime Sevilla",
+      "CEO"
+     ],
+     [
+      "María de la Lama",
+      "COO"
+     ],
+     [
+      "Yafah Edelman",
+      "CSO"
+     ],
+     [
+      "Bret Sepulveda",
+      "CTO"
+     ],
+     [
+      "Greg Burnham",
+      "Head of Benchmarks"
+     ],
+     [
+      "Jeremy Self",
+      "Head of Web Development"
+     ],
+     [
+      "Kyla Wills",
+      "Head of People"
+     ],
+     [
+      "Alexander Barry",
+      "Head of Capabilities Tracking"
+     ]
+    ]
+   },
+   {
+    "name": "Research",
+    "people": [
+     [
+      "David Owen",
+      "Senior Researcher"
+     ],
+     [
+      "Anson Ho",
+      "Senior Researcher"
+     ],
+     [
+      "Ben Cottier",
+      "Senior Researcher"
+     ],
+     [
+      "Isabel Juniewicz",
+      "Senior Researcher"
+     ],
+     [
+      "Campbell Hutcheson",
+      "Senior Researcher"
+     ],
+     [
+      "Phil Trammell",
+      "Senior Researcher"
+     ],
+     [
+      "Michelle Campeau",
+      "Senior Researcher"
+     ],
+     [
+      "Håvard Tveit Ihle",
+      "Senior Researcher"
+     ],
+     [
+      "Benjamin Ou",
+      "Researcher"
+     ],
+     [
+      "Josh You",
+      "Researcher"
+     ],
+     [
+      "Luke Emberson",
+      "Researcher"
+     ],
+     [
+      "Venkat Somala",
+      "Researcher"
+     ],
+     [
+      "Caroline Falkman Olsson",
+      "Researcher"
+     ],
+     [
+      "Daniel Carey",
+      "Researcher"
+     ],
+     [
+      "Samuel Prieto",
+      "Researcher"
+     ],
+     [
+      "Tara Abrishami",
+      "Researcher"
+     ],
+     [
+      "Jaeho Lee",
+      "Researcher"
+     ],
+     [
+      "Kelly Hong",
+      "Researcher"
+     ],
+     [
+      "Aiden Ament",
+      "Researcher"
+     ],
+     [
+      "Jason Li",
+      "Researcher"
+     ],
+     [
+      "Lucio Melito",
+      "Researcher"
+     ],
+     [
+      "Emilia Álvarez",
+      "Researcher"
+     ],
+     [
+      "Radu Covaci",
+      "Researcher"
+     ],
+     [
+      "Amreeta Das",
+      "Researcher"
+     ],
+     [
+      "Henry Mann",
+      "Researcher"
+     ],
+     [
+      "Axel Campos",
+      "Data Center Analyst"
+     ]
+    ]
+   },
+   {
+    "name": "Engineering",
+    "people": [
+     [
+      "Tom Adamczewski",
+      "Senior Research Engineer"
+     ],
+     [
+      "Lee Bousfield",
+      "Senior Software Engineer"
+     ],
+     [
+      "Bill Bateman",
+      "Senior Software Engineer"
+     ],
+     [
+      "Giles Edkins",
+      "Senior Software Engineer"
+     ],
+     [
+      "Naomi Bancroft",
+      "Senior Engineer"
+     ],
+     [
+      "Edu Roldán",
+      "Software Engineer"
+     ],
+     [
+      "Andrew Souza",
+      "Software Engineer"
+     ],
+     [
+      "Jonathan Mustin",
+      "Software Engineer"
+     ],
+     [
+      "Aidan Hendrickson",
+      "Software Engineer"
+     ],
+     [
+      "Sviatoslav Shatunov",
+      "Software Engineer"
+     ],
+     [
+      "H. Ryan Jones",
+      "Web Developer"
+     ],
+     [
+      "Avery Yen",
+      "Research Engineer"
+     ],
+     [
+      "Timothée Chauvin",
+      "Research Engineer"
+     ]
+    ]
+   },
+   {
+    "name": "Communications",
+    "people": [
+     [
+      "Elliot Stewart",
+      "Lead Editor"
+     ],
+     [
+      "Cathy Bogaart",
+      "Communications Specialist"
+     ],
+     [
+      "Mike Mantell",
+      "Communications Specialist"
+     ]
+    ]
+   },
+   {
+    "name": "Operations",
+    "people": [
+     [
+      "Pablo Stafforini",
+      "AI Enablement Manager"
+     ],
+     [
+      "Vijay Samtani",
+      "Cybersecurity Specialist"
+     ],
+     [
+      "Casey Whitcomb",
+      "Finance Manager"
+     ],
+     [
+      "Mélanie Girod",
+      "Finance Specialist"
+     ],
+     [
+      "Maria Jose Zabaleta",
+      "Compliance and Finance Specialist"
+     ],
+     [
+      "Jonah O'Connor",
+      "Recruiter"
+     ],
+     [
+      "Rockwell Schwartz",
+      "Events Lead"
+     ],
+     [
+      "Roman Coussement",
+      "Special Projects Associate"
+     ],
+     [
+      "Dmitriy Khripkov",
+      "Special Projects Associate"
+     ],
+     [
+      "Simon Chen",
+      "Executive Associate"
+     ],
+     [
+      "Mónica Ulloa",
+      "Executive Assistant"
+     ],
+     [
+      "Matt Soens",
+      "People Operations Associate"
+     ]
+    ]
+   }
+  ],
+  "board": [
+   "Tom Davidson",
+   "Ajeya Cotra",
+   "Jaime Sevilla",
+   "María de la Lama",
+   "Steve Newman"
+  ],
+  "advisors": [
+   [
+    "Virginia Blanton",
+    "Leadership Advisor"
+   ],
+   [
+    "Neil Thompson",
+    "Research Advisor"
+   ],
+   [
+    "Nitarshan Rajkumar",
+    "Partnership Advisor"
+   ],
+   [
+    "Miles Brundage",
+    "Strategy Advisor"
+   ],
+   [
+    "Daniel Kokotajlo",
+    "Research Advisor"
+   ]
+  ]
+ },
+ "consultations": {
+  "title": "Work with our experts",
+  "lede": "Mission-aligned research, model evaluations, and advisory services for companies, nonprofits, and government bodies.",
+  "services": [
+   {
+    "name": "Research reports on AI trends",
+    "text": "Detailed reports on AI trends and bottlenecks, similar in scope and depth to our AI power demand study with EPRI or our Rosetta Stone paper with Google DeepMind."
+   },
+   {
+    "name": "Model evaluation and analysis",
+    "text": "Qualitative and quantitative evaluation of the strengths, weaknesses, and capabilities of AI systems across domains."
+   },
+   {
+    "name": "Data collection and curation",
+    "text": "High-quality, complete data on AI models, training, usage, companies, and infrastructure."
+   },
+   {
+    "name": "Benchmark development",
+    "text": "Quantitative evaluations of AI capabilities and performance, such as the FrontierMath benchmark commissioned by OpenAI."
+   },
+   {
+    "name": "Data-center intelligence",
+    "text": "Monitoring of leading-edge colocation facilities, both for sites we already track and data centers not yet in our database."
+   },
+   {
+    "name": "Technical briefings and explainers",
+    "text": "Complex AI concepts, research, and developments distilled into clear, actionable summaries for key audiences."
+   }
+  ],
+  "onDemand": "For fast, recurring support, we offer retainer-based access to our experts with 24-hour turnaround on your queries: analysis of AI developments or model releases, AI market forecasts, and other support for business decisions.",
+  "clients": [
+   "EU AI Office",
+   "Sequoia Capital",
+   "Bridgewater Associates AIA Labs",
+   "Stanford AI Index",
+   "UK DSIT",
+   "OpenAI"
+  ],
+  "highlights": [
+   {
+    "name": "OpenAI",
+    "text": "We developed FrontierMath with OpenAI to evaluate frontier mathematical capabilities, enlisting over 70 expert mathematicians to craft research-level problems."
+   },
+   {
+    "name": "AI Index",
+    "text": "Epoch AI is a data provider for the AI Index Report, the annual report on AI by Stanford’s Institute for Human-Centered Artificial Intelligence."
+   }
+  ]
+ },
+ "careers": {
+  "title": "Join us in understanding the path of AI",
+  "lede": "We’re an interdisciplinary, remote-friendly team working on some of the most important questions about AI.",
+  "roles": [
+   {
+    "team": "Research and Engineering",
+    "title": "Researcher / Senior Researcher",
+    "text": "Improve society’s understanding of AI capabilities and their trajectories."
+   },
+   {
+    "team": "Communications",
+    "title": "Social Video Producer",
+    "text": "Help launch short-form video for our new media program: producing and editing videos about AI for TikTok and Instagram, and shaping how we show up on those platforms."
+   },
+   {
+    "team": "Product & Design",
+    "title": "Design Lead / Head of Design",
+    "text": "Lead UI/UX and data visualization, manage our design team, and translate complex research into intuitive, engaging designs."
+   },
+   {
+    "team": "Product & Design",
+    "title": "Designer / Senior Designer",
+    "text": "Turn complex research on AI into dashboards and data visualizations, specializing in product and web design or in data visualization."
+   },
+   {
+    "team": "Product & Design",
+    "title": "Product Manager, Website",
+    "text": "Decide and manage what gets built in order to communicate our research."
+   }
+  ],
+  "interest": [
+   {
+    "title": "Expression of interest",
+    "text": "We’re always looking for talent in research, operations, engineering, data, and communications. We’ll reach out if there’s an open position that fits."
+   },
+   {
+    "title": "Special Projects Associate",
+    "text": "Provide specialized operations support for our research teams."
+   }
+  ]
+ }
 }

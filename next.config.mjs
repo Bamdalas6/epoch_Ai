@@ -6,6 +6,15 @@ export default {
   // Ship the shared JSON content with every server route.
   outputFileTracingIncludes: { "/**": ["./content/**/*.json"] },
 
+  // Addresses as they were named on epoch.ai land on the matching page here.
+  async redirects() {
+    return [
+      ["/publications", "/latest"], ["/eci", "/benchmarks/eci"], ["/frontiermath", "/benchmarks/frontiermath"],
+      ["/frontiermath/open-problems", "/benchmarks/frontiermath-open-problems"], ["/MirrorCode", "/benchmarks/mirrorcode"],
+      ["/gradient-updates", "/newsletter"], ["/epoch-after-hours", "/podcast"], ["/privacy", "/legal/privacy"], ["/cookies", "/legal/cookies"],
+    ].map(([source, destination]) => ({ source, destination, permanent: false }));
+  },
+
   // Browser calls to /api/* go to the Python service when there is one;
   // otherwise the built-in route handlers in app/api answer.
   async rewrites() {
