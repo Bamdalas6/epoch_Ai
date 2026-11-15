@@ -33,10 +33,9 @@ if errorlevel 1 (
 ) else (
   echo Starting the Python API on http://localhost:8000 ...
   python -m pip install -q -r api\requirements.txt >> "%LOG%" 2>&1
-  start "Epoch concept API" /min /d "%~dp0api" python -m uvicorn main:app --port 8000
+  start "Epoch concept API" /min /d "%~dp0server" python -m uvicorn main:app --port 8000
 )
 
-cd web
 if not exist node_modules\next (
   echo Installing website packages. First run only, this can take several minutes. Please wait...
   call npm install >> "%LOG%" 2>&1

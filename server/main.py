@@ -1,6 +1,6 @@
 """Content + newsletter API for the Epoch AI redesign concept.
 
-Run:  uvicorn main:app --reload --port 8000   (from the api/ folder)
+Run:  uvicorn main:app --reload --port 8000   (from the server/ folder)
 The Next.js site and the Flutter app both read from this service.
 """
 import json

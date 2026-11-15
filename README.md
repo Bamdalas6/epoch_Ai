@@ -5,8 +5,8 @@ Not affiliated with or endorsed by Epoch AI. Content and figures come from epoch
 | Folder | Stack | What it is |
 |---|---|---|
 | `content/` | JSON | `site.json` (homepage, read by every part) and `pages.json` (inner pages) |
-| `api/` | Python (FastAPI) | Serves the content and validates newsletter signups |
-| `web/` | Next.js + React, semantic HTML5 | The website: homepage plus 12 inner pages, white background, zoom and scroll motion |
+| `server/` | Python (FastAPI) | Optional: serves the content and validates newsletter signups |
+| `app/`, `components/`, `lib/` | Next.js + React, semantic HTML5 | The website: homepage plus 12 inner pages, white background, zoom and scroll motion |
 | `mobile/` | Flutter | Animated companion app reading the same API |
 
 ## Pages
@@ -33,13 +33,12 @@ Or start each part by hand:
 
 **1. API** (Python 3.10+)
 
-    cd api
+    cd server
     pip install -r requirements.txt
     uvicorn main:app --reload --port 8000
 
-**2. Website** (Node 20+)
+**2. Website** (Node 20+), from the project folder
 
-    cd web
     npm install
     npm run dev          # http://localhost:3000
 
@@ -58,7 +57,7 @@ On an Android emulator use `--dart-define=API_URL=http://10.0.2.2:8000`.
 ## Deploy to Vercel
 
 1. In Vercel choose **Add New → Project** and import this GitHub repository.
-2. Set **Root Directory** to `web` (leave "Include files outside the root directory" on, the default). Framework: Next.js, detected automatically.
+2. Leave **Root Directory** empty. Framework: Next.js, detected automatically.
 3. Deploy. No environment variables are needed: pages are pre-rendered from `content/*.json`, and `/api/subscribe` is answered by a built-in route.
 4. Optional: host the Python API elsewhere and set `API_URL` to its address to have the site read content from it.
 
@@ -77,4 +76,4 @@ On an Android emulator use `--dart-define=API_URL=http://10.0.2.2:8000`.
 - The contact and consultation forms validate but do not send; connect them to a form backend.
 - Hanken Grotesk (free, via next/font) stands in for Messina Sans until licensed files are added.
 - `POST /api/subscribe` only validates; connect a mailing-list provider.
-- Restrict CORS origins in `api/main.py`.
+- Restrict CORS origins in `server/main.py`.
